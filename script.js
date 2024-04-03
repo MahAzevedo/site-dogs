@@ -38,3 +38,4 @@ function handleMouse(event) {
 document.addEventListener('click', handleMouse);
 // tudo é objeto
 // null e o undefined não é um objeto
+// react
