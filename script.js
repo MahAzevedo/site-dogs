@@ -29,8 +29,7 @@ console.log(upperName('Mádjan'));
 
 
 function handleMouse(event) {
-    const x = event.clientX;
-    const y = event.clientY;
+    const { clientX, clientY } = event;
 
     console.log(x, y);
 }
