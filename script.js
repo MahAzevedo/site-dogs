@@ -58,3 +58,6 @@ const useQuadrado = [
 const [lados, perimetro] = useQuadrado;
 console.log(lados);
 console.log(perimetro(5));
+
+
+// Rest espread 
