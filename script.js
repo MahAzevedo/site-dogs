@@ -60,4 +60,36 @@ console.log(lados);
 console.log(perimetro(5));
 
 
-// Rest espread 
+// Rest spread : são 3 pontinhos -> ... O operador rest são 3 pontinhos ...    significa: pega todo o restante dos itens e coloca dentro da array cliente 
+
+function showList(empresa, ...clientes) {
+    clientes.forEach((cliente) => {
+        console.log(cliente, empresa);
+    })
+}
+showList('Google', 'Mádjan', 'Gustavo', 'item 2');
+
+// spread : serve para espalhar os itens do array
+
+const numeros = [10, 5, 20];
+const maior = Math.max(...numeros);
+console.log(maior);
+
+const numeros2 = [13, ...numeros, 24, 32, 32];
+console.log(numeros2);
+
+
+const carro = {
+    cor: 'azul',
+    portas: 4,
+}
+
+// desestrutura, desestruturação
+// novo objeto abaixo o que tá dentro das chaves
+carroAno = { ...carro, ano: 2008 };
+console.log(carroAno);
+
+
+// --------------------------------*****-------
+
+// MODULES : para a criação de componentes do react
