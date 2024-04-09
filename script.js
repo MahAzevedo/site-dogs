@@ -86,10 +86,33 @@ const carro = {
 
 // desestrutura, desestruturação
 // novo objeto abaixo o que tá dentro das chaves
+/*
 carroAno = { ...carro, ano: 2008 };
 console.log(carroAno);
+*/
+
 
 
 // --------------------------------*****-------
 
 // MODULES : para a criação de componentes do react
+/*
+Module
+Os módulos servem para quebrarmos o código em diferente arquivos, para facilitar a organização e compartilhamento de código comum.
+
+***** Só funciona em servidor, seja local ou online
+Não irá funcionar se você abrir o html direto
+*/
+
+import { areaQuadrado, perimetroQuadrado } from "./quadrado.js"
+console.log(areaQuadrado(5));
+console.log(perimetroQuadrado(5));
+
+import quadrado from "./quadrado.js";
+console.log(quadrado.perimetroQuadrado(5))
+
+
+import numeroAleatorio from "./numeroAleatorio.js";
+console.log(numeroAleatorio());
+
+
