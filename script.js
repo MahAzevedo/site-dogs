@@ -116,4 +116,4 @@ import numeroAleatorio from "./numeroAleatorio.js";
 console.log(numeroAleatorio());
 
 
-// module e importaçao
+// module
