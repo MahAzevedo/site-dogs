@@ -104,9 +104,9 @@ Os módulos servem para quebrarmos o código em diferente arquivos, para facilit
 Não irá funcionar se você abrir o html direto
 */
 
-import { areaQuadrado, perimetroQuadrado } from "./quadrado.js"
-console.log(areaQuadrado(5));
-console.log(perimetroQuadrado(5));
+// import { areaQuadrado, perimetroQuadrado } from "./quadrado.js"
+// console.log(areaQuadrado(5));
+// console.log(perimetroQuadrado(5));
 
 import quadrado from "./quadrado.js";
 console.log(quadrado.perimetroQuadrado(5))
@@ -116,3 +116,4 @@ import numeroAleatorio from "./numeroAleatorio.js";
 console.log(numeroAleatorio());
 
 
+// module e importaçao
