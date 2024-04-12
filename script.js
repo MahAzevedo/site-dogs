@@ -117,4 +117,3 @@ console.log(numeroAleatorio());
 
 
 // module
-// exercicio
