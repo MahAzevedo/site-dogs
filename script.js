@@ -117,3 +117,4 @@ console.log(numeroAleatorio());
 
 
 // module
+// é onde carrega a informaçaõ
