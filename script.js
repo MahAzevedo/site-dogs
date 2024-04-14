@@ -118,3 +118,4 @@ console.log(numeroAleatorio());
 
 // module
 // é onde carrega a informação
+// import é onde importa a informação, ou seja, é de onde importa a informação
