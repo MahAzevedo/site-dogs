@@ -119,3 +119,9 @@ console.log(numeroAleatorio());
 // module
 // é onde carrega a informação
 // import é onde importa a informação, ou seja, é de onde importa a informação que será levada de um canto para o outro com o endereço que será completado colocando o nome do arquivo e o from 
+
+/*
+P) pq precisa do import e do from? 
+R) pq vc vai importar de algum lugar, como assim?
+importar de um lugar que tem nome e esse nome é o nome do arqwuivp e o de/from com o endereço para que o programa saiba da onde ele saiu. 
+*/
