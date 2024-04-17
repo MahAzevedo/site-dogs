@@ -124,4 +124,5 @@ console.log(numeroAleatorio());
 P) pq precisa do import e do from? 
 R) pq vc vai importar de algum lugar, como assim?
 importar de um lugar que tem nome e esse nome é o nome do arqwuivp e o de/from com o endereço para que o programa saiba da onde ele saiu. 
+E se for js, tem que colocar o js no final
 */
