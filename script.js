@@ -128,3 +128,6 @@ E se for js, tem que colocar o js no final
 js
 */
 
+function areaQuadrado(l) {
+    return l * l
+}
