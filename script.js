@@ -128,5 +128,45 @@ E se for js, tem que colocar o js no final
 js
 */
 
-import { areaQuadrado, perimetroQuadrado } from './quadrado.js';
-console.log(perimetroQuadrado(5));
+
+
+// ----******-----------
+
+
+
+/*
+   --->>>   fetch
+Envia requisições assíncronas para o servidor. Serve para acessarmos/escrevermos dados em apis externas.
+
+Exemplo: 
+Quero puxar informaçao do servidor com a quantidade de produtos que estao nele.
+Pra isso tenho que usar uma funçao pra fazer isso.
+POsso utilizar uma fetch(), um ajax
+Coloco uma URL/endereço dentro do fetch -> fetch(url)
+
+o fetch é uma promessa
+*/
+// fetch() :  Envia requisições assíncronas para o servidor. Serve para acessarmos/escrevermos dados em apis externas.
+// esse then() é uma funcáo de callback
+/*
+fetch('https://ranekapi.origamid.dev/json/api/produto')
+    .then((response) => response.json())
+    .then((json) => {
+        console.log(json);
+    });
+*/
+
+
+
+
+// Async/Await
+// Fetch retorna uma promisse. É possível criarmos funções assíncronas, que irão esperar a promisse resolver, antes de continuar com o código.
+
+async function fetchProdutos(url) {
+    const response = await fetch(url);
+    const json = await response.json();
+    return json;
+}
+
+const produtos = fetchProdutos('https://ranekapi.origamid.dev/json/api/produto');
+
