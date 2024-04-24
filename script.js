@@ -128,10 +128,5 @@ E se for js, tem que colocar o js no final
 js
 */
 
-function areaQuadrado(l) {
-    return l * l;
-}
-
-function perimetroQuadrado(l) {
-    return 4 * l;
-}
+import { areaQuadrado, perimetroQuadrado } from './quadrado.js';
+console.log(perimetroQuadrado(5));
