@@ -192,3 +192,8 @@ const precos = [
     'R$ 400',
     'Meus dados',
 ];
+
+const precosFiltro = precos.filter(function (preco) {
+    console.log(preco);
+});
+console.log(precosFiltro);
