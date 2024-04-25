@@ -159,6 +159,11 @@ fetch('https://ranekapi.origamid.dev/json/api/produto')
 
 
 
+
+
+// ----******-----------
+
+
 // Async/Await
 // Fetch retorna uma promisse. É possível criarmos funções assíncronas, que irão esperar a promisse resolver, antes de continuar com o código.
 
@@ -170,3 +175,20 @@ async function fetchProdutos(url) {
 
 const produtos = fetchProdutos('https://ranekapi.origamid.dev/json/api/produto');
 
+
+
+
+// ----******-----------
+
+// Arrays (Map e Filter)  :
+// Métodos para iterarmos entre os valores de arrays.
+
+const precos = [
+    'Crédito',
+    'R$ 200',
+    'R$ 400',
+    'Contas Pagar',
+    'R$ 300',
+    'R$ 400',
+    'Meus dados',
+];
