@@ -193,7 +193,7 @@ const precos = [
     'Meus dados',
 ];
 
-const precosFiltro = precos.filter(function (preco) {
+const precosFiltro = precos.filter((preco) => {
     console.log(preco.includes('R$'));
     return preco.includes('R$');
 });
