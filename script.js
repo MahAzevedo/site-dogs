@@ -195,6 +195,6 @@ const precos = [
 
 const precosFiltro = precos.filter(function (preco) {
     console.log(preco.includes('R$'));
-    return truepreco.includes('R$');
+    return preco.includes('R$');
 });
 console.log(precosFiltro);
