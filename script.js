@@ -202,7 +202,7 @@ console.log(precosFiltro);
 
 // map    :  função de map
 
-// lista
+// 
 
 
 
