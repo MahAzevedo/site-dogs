@@ -204,8 +204,6 @@ console.log(precosFiltro);
 
 
 
-
-
 // Mostre os dados da aplicação, como apresentado no vídeo
 // Não utilize CSS externo, use o style para mudar as cores
 // Se a situação estiver ativa pinte de verde, inativa vermelho
@@ -238,7 +236,9 @@ const mario = {
 const App = () => {
     const dados = luana;
 
-    const total = dados.compras.map(item => item.preco);
+    const total = dados.compras.map((item) =>
+        Number(item.preco.replace('R$ ', '')),
+    ).reduce((a, b) => a + b);
     console.log(total);
 
     return (
@@ -249,3 +249,4 @@ const App = () => {
         </div>
     );
 };
+
