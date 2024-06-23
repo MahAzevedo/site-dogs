@@ -30,7 +30,9 @@ const mario = {
 const App = () => {
     const dados = luana;
 
-    const total = dados.compras.map(item => item.preco);
+    const total = dados.compras.map((item) =>
+        Number(item.preco.replace('R$ ', '')),
+    ).reduce((a, b) => a + b);
     console.log(total);
 
     return (
