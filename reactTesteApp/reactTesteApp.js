@@ -6,3 +6,15 @@ const App = () => {
 };
 
 export default App;
+
+//************ 
+
+/**/
+FechamentoPedido
+
+if (brokerConfigurado == BROKER_1)
+    broker1.efetuarPagamento();
+else if (brokerConfigurado == BROKER_2)
+    broker2.efetuarPagamento();
+else if (brokerConfigurado == BROKER_3)
+    broker3.efetuarPagamento();
