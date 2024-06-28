@@ -9,7 +9,7 @@ export default App;
 
 //************ 
 
-/**/
+
 FechamentoPedido
 
 if (brokerConfigurado == BROKER_1)
