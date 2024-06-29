@@ -7,11 +7,15 @@ const App = () => {
 
 export default App;
 
+
+
+
+
+
 //************ 
 
-
 // FechamentoPedido
-// condição no if-then-else (abaixo):
+// condição no if-then-else (abaixo) ou switch-case:
 
 if (brokerConfigurado == BROKER_1)
     broker1.efetuarPagamento();
