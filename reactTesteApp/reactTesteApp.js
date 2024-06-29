@@ -10,7 +10,8 @@ export default App;
 //************ 
 
 
-FechamentoPedido
+// FechamentoPedido
+// condição no if-then-else (abaixo):
 
 if (brokerConfigurado == BROKER_1)
     broker1.efetuarPagamento();
@@ -18,3 +19,5 @@ else if (brokerConfigurado == BROKER_2)
     broker2.efetuarPagamento();
 else if (brokerConfigurado == BROKER_3)
     broker3.efetuarPagamento();
+
+// Solucao sem poliformismo
