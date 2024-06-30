@@ -25,3 +25,16 @@ else if (brokerConfigurado == BROKER_3)
     broker3.efetuarPagamento();
 
 // Solucao sem poliformismo
+
+
+
+import React from 'react';
+
+const produtos = [
+    {
+        id: 1,
+        nome: 'Smartphone',
+        preco: 'R$ 2000',
+        cores: ['#29d8d5',],
+    }
+];
