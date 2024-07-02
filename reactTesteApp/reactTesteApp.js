@@ -36,5 +36,8 @@ const produtos = [
         nome: 'Smartphone',
         preco: 'R$ 2000',
         cores: ['#29d8d5', '#252a34', '#fc3766'],
-    }
+    },
+    {
+        id: 2,
+    },
 ];
