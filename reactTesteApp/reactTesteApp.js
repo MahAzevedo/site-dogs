@@ -43,4 +43,11 @@ const produtos = [
         preco: 'R$ 3000',
         cores: ['#ffd045', '#d4394b', '#f37c59'],
     },
+    {
+        id: 3,
+        nome: 'Notebook',
+        preco: 'R$ 3000',
+        cores: ['#ffd045', '#d4394b', '#f37c59'],
+    }
 ];
+
