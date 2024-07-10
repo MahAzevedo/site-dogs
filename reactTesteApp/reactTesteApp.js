@@ -52,6 +52,8 @@ const produtos = [
 ];
 
 const App = () => {
+    const dados = produtos.filter(())
+
     return <section>
 
     </section>;
