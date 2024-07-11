@@ -52,7 +52,7 @@ const produtos = [
 ];
 
 const App = () => {
-    const dados = produtos.filter(())
+    const dados = produtos.filter(({ preco }) => Number(preco.replace("R$ ", "")))
 
     return <section>
 
