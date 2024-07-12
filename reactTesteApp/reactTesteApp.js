@@ -52,7 +52,8 @@ const produtos = [
 ];
 
 const App = () => {
-    const dados = produtos.filter(({ preco }) => Number(preco.replace("R$ ", "")))
+    const dados = produtos.filter(({ preco }) => Number(preco.replace('R$ ', '')) > 1500,);
+    console.log(dados);
 
     return <section>
 
