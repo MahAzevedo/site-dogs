@@ -1,3 +1,4 @@
+import { directive } from '@babel/types';
 import React from 'react';
 
 const App = () => {
@@ -56,7 +57,9 @@ const App = () => {
     console.log(dados);
 
     return <section>
-        {dados.map(({ id, nome, preco, cores }))}
+        {dados.map(({ id, nome, preco, cores }) => <div>
+
+        </div>)}
     </section>;
 };
 
