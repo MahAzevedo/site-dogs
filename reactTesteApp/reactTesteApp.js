@@ -58,7 +58,7 @@ const App = () => {
 
     return <section>
         {dados.map(({ id, nome, preco, cores }) => <div>
-
+            <h1>{nome}</h1>
         </div>)}
     </section>;
 };
