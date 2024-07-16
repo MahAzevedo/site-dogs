@@ -57,7 +57,7 @@ const App = () => {
     console.log(dados);
 
     return <section>
-        {dados.map(({ id, nome, preco, cores }) => <div>
+        {dados.map(({ id, nome, preco, cores }) => <div key={id}>
             <h1>{nome}</h1>
         </div>)}
     </section>;
