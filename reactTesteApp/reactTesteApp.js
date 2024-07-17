@@ -59,6 +59,7 @@ const App = () => {
     return <section>
         {dados.map(({ id, nome, preco, cores }) => <div key={id}>
             <h1>{nome}</h1>
+            <p>Preço: {preco}</p>
         </div>)}
     </section>;
 };
