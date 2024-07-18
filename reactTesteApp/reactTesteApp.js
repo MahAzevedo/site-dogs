@@ -60,6 +60,7 @@ const App = () => {
         {dados.map(({ id, nome, preco, cores }) => <div key={id}>
             <h1>{nome}</h1>
             <p>Preço: {preco}</p>
+            <ul>{cores}</ul>
         </div>)}
     </section>;
 };
