@@ -63,7 +63,7 @@ const App = () => {
             <p>Preço: {preco}</p>
             <ul>
                 {cores.map((cor) =>
-                    <li style={{ backgroundColor: cor }} key={cor}>{cor}</li>)}
+                    <li style={{ backgroundColor: cor, color: "white" }} key={cor}>{cor}</li>)}
             </ul>
         </div>)}
     </section>;
