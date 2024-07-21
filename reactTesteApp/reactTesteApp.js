@@ -70,3 +70,24 @@ const App = () => {
 };
 
 export default App;
+
+import React from 'react'
+
+const reactTesteApp = () => {
+    return (
+        <div>
+
+        </div>
+    )
+}
+
+export default reactTesteApp
+
+const Teste = () => {
+    const active = false;
+    if (active) {
+        return <p>Teste</p>;
+    } else {
+        return null;
+    }
+};
