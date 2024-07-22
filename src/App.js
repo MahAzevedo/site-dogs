@@ -6,7 +6,7 @@ import Produtos from './Produtos';
 const App = () => {
     let pagina = Home;
     const { pathname } = window.location;
-    i(pathname === '/produtos') {
+    if (pathname === '/produtos') {
         Pagina = Produtos
     } else {
         Pagina = Home
