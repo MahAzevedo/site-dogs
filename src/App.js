@@ -4,12 +4,13 @@ import Home from './Home';
 import Produtos from './Produtos';
 
 const App = () => {
-    let pagina = Home;
     const { pathname } = window.location;
+
+    let Pagina;
     if (pathname === '/produtos') {
         Pagina = Produtos
     } else {
-        Pagina = Home
+        Pagina = Home;
     }
 
     return (
@@ -20,7 +21,7 @@ const App = () => {
     )
 }
 
-export default App
+export default App;
 
 
 
