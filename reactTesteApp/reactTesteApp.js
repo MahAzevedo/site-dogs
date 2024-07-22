@@ -91,3 +91,32 @@ const Teste = () => {
         return null;
     }
 };
+
+import React from 'react';
+
+const Titulo = (props) => {
+    return <h1>{props.texto}</h1>;
+};
+
+const App = () => {
+    return (
+        <div>
+            <Titulo texto='Meu título 1' />
+        </div>
+    )
+};
+
+export default App;
+
+import React from 'react';
+
+const Input = ({ label, id, ...props }) => {
+    return (
+        <div style={{ margin: '1rem 0' }}>
+            <label htmlFor={id}>{label}</label>
+            <input id={id} type='text' {...props}></input>
+        </div>
+    );
+};
+
+export default Input;
