@@ -58,6 +58,7 @@ const App = () => {
     };
     return (
         <div>
+            {items.map(item => <li key={item}>{item}</li>)}
             <button onClick={handleClick}>{contar}</button>
         </div>
     )
