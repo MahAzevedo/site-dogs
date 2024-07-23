@@ -54,7 +54,8 @@ const App = () => {
     function handleClick() {
         setContar((contar) => {
             return contar + 1;
-        })
+        });
+        setItems((items) => [...items, 'Item' + (contar + 1)]);
     };
     return (
         <div>
