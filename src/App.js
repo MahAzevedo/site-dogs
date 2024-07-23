@@ -52,7 +52,7 @@ const App = () => {
     const [items, setItems] = React.useState(['Item 1']);
 
     function handleClick() {
-        setContar((contar) => contar + 1);
+        setContar(contar + 1);
         setItems((items) => [...items, 'Item' + (contar + 1)]);
     };
     return (
