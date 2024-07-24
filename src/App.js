@@ -281,3 +281,16 @@ const App = () => {
 }
 
 export default App;
+
+
+import React from 'react'
+
+const App = () => {
+    return (
+        <UserContext.Provider>
+            <div></div>
+        </UserContext.Provider>
+    )
+}
+
+export default App
