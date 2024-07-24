@@ -251,3 +251,21 @@ const Produto = ({ produto }) => {
 }
 
 export default Produto;
+
+
+
+
+import React from 'react'
+
+const App = () => {
+    const [carrinho, setCarrinho] = React.useState(0);
+    const [notificacao, setNotificacao] = React.useState(null);
+
+    return (
+        <div>
+            <button onClick={handleClick}>Adicionar Carrinho {carrinho}</button>
+        </div>
+    )
+}
+
+export default App
