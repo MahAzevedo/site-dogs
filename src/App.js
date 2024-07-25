@@ -284,13 +284,14 @@ export default App;
 
 
 import React from 'react'
+import UserContext from './UserContext';
 
 const App = () => {
     return (
-        <UserContext.Provider>
-            <div></div>
+        <UserContext.Provider value={{ nome: 'André' }}>
+            <Produto />
         </UserContext.Provider>
-    )
-}
+    );
+};
 
-export default App
+export default App;
