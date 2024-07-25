@@ -8,12 +8,19 @@
 // e exponha essa função no contexto global
 
 
+import { response } from 'express';
 import React from 'react';
 
 export const GlobalContext = React.createContext();
 
-export const GlobalStorage = ({ children }) {
-    return <GlobalContext.Provider value={{}}>{children}</GlobalContext.Provider>
+export const GlobalStorage = ({ children }) => {
+    const [dados, setDados] = React.useState(null);
+
+    React.useEffect(() => {
+        fecth(`https://ranekapi.origamid.dev/json/api/produto/`).then(response => response.json()).then(json => setDados(json));
+    }, []);
+
+    return <GlobalContext.Provider value={{ dados }}>{children}</GlobalContext.Provider>
 };
 
 const App = () => {
@@ -26,26 +33,31 @@ const App = () => {
         setProduto(produto + 1)
     }, [];
 
-    fecth(`https://ranekapi.origamid.dev/json/api/produto/${}`);
+
     return (
         <div>
-            <button>{produto}</button>
+            <button>{dados}</button>
         </div>
     )
 }
 
 export default App
+
 //***************** */
+
+
 import React from 'react'
+import { GlobalContext } from './GlobalContext';
 
-const GlobalContext = () => {
-    return (
-        <div>
-            <GlobalContext>
-                <Produto />
-            </GlobalContext>
-        </div>
-    )
-}
+const Produto = () => {
+    const global = React.useContext(GlobalContext);
+    if (global.dados === null) return null;
+    return <div>
+        Produto: {' '}
+        {global.dados.map((produto) => (
+            <li key={produto.id}>{produto.nome}</li>
+        ))};
+    </div>;
+};
 
-export default GlobalContext
+export default Produto;
