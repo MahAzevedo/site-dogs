@@ -6,14 +6,13 @@ const useFetch = () => {
     const [loading, setLoading] = React.useState(null);
 
     async function request(url, options) {
+        setLoading(true);
         const response = await fetch(url, options);
         const json = await response.json();
         setData(json);
+        setLoading(false);
     }
 
-    React.useEffect(() => {
-        request('https://ranekapi.origamid.dev/json/api/produto/')
-    }, []);
 
     return { data, error, loading, request };
 };
