@@ -12,7 +12,7 @@ const useFetch = () => {
     }
 
     React.useEffect(() => {
-
+        request('https://ranekapi.origamid.dev/json/api/produto/')
     }, []);
 
     return { data, error, loading, request };
