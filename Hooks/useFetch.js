@@ -11,7 +11,11 @@ const useFetch = () => {
         setData(json);
     }
 
-    return { data, error, loading }
+    React.useEffect(() => {
+
+    }, []);
+
+    return { data, error, loading, request };
 };
 
 export default useFetch;
