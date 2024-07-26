@@ -17,31 +17,23 @@ export const GlobalStorage = ({ children }) => {
     const [dados, setDados] = React.useState(null);
 
     React.useEffect(() => {
-        fecth(`https://ranekapi.origamid.dev/json/api/produto/`).then(response => response.json()).then(json => setDados(json));
+        fecth(`https://ranekapi.origamid.dev/json/api/produto/`)
+            .then((response) => response.json())
+            .then((json) => setDados(json));
     }, []);
 
-    return <GlobalContext.Provider value={{ dados }}>{children}</GlobalContext.Provider>
-};
-
-const App = () => {
-    const [dados, setDados] = React.useState(null);
-    const [produto, setProduto] = React.useState(null);
-
-    const UserContext = React.userContext();
-
     function limparDados() {
-        setProduto(produto + 1)
-    }, [];
-
+        setProduto(null);
+    };
 
     return (
-        <div>
-            <button>{dados}</button>
-        </div>
-    )
-}
+        <GlobalContext.Provider value={{ dados, limparDados }}> {children}
+        </GlobalContext.Provider>
+    );
+};
 
-export default App
+
+
 
 //***************** */
 

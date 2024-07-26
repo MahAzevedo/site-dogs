@@ -284,7 +284,7 @@ export default App;
 
 
 import React from 'react'
-import UserContext from './UserContext';
+import UserContext from './GlobalContext';
 
 const App = () => {
     return (
@@ -295,3 +295,31 @@ const App = () => {
 };
 
 export default App;
+
+
+function adicionarUm() {
+    setContar((contar) => contar + 1);
+}
+function adicionarDois() {
+    setContar
+}
+
+
+// **********************  
+
+
+import React from 'react';
+import { GlobalStorage } from './GlobalContext';
+import Limpar from './Limpar';
+
+const App = () => {
+    return (
+        <GlobalStorage>
+            <Produto />
+            <Limpar />
+        </GlobalStorage>
+    );
+};
+
+export default App;
+
