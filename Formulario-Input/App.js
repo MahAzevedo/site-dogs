@@ -6,7 +6,12 @@ const App = () => {
 
     return (
         <form>
-            <input type='text' />
+            <label htmlFor='nome'></label>
+            <input
+                type='text'
+                value={nome}
+                onChange={(event => setNome(event.target.value))
+                    />
         </form>
     )
 };
