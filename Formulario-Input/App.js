@@ -6,7 +6,7 @@ const App = () => {
 
     return (
         <form>
-            <label htmlFor='nome'></label>
+            <label htmlFor='nome'>Nome</label>
             <input
                 type='text'
                 value={nome}
