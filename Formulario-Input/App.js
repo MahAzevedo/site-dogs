@@ -4,7 +4,8 @@ const App = () => {
     const [nome, setNome] = React.useState('');
 
     function handleSubmit(event) {
-        console.log(event);
+        event.preventDefault();
+        console.log(nome, email);
     };
 
     return (
