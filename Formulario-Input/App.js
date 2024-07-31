@@ -5,7 +5,7 @@ const App = () => {
 
 
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <label htmlFor='nome'>Nome</label>
             <input
                 id='nome'
@@ -13,6 +13,7 @@ const App = () => {
                 value={nome}
                 onChange={(event) => setNome(event.target.value)}
             />
+            <button>Enviar</button>
         </form>
     );
 };
