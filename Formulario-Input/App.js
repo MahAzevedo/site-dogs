@@ -3,6 +3,9 @@ import React from 'react'
 const App = () => {
     const [nome, setNome] = React.useState('');
 
+    function handleSubmit(event) {
+        console.log(event);
+    };
 
     return (
         <form onSubmit={handleSubmit}>
