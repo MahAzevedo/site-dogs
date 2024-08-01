@@ -22,7 +22,7 @@ const App = () => {
             <label htmlFor='email'>E-mail</label>
             <input
                 id='email'
-                type='text'
+                type='email'
                 name='email'
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
