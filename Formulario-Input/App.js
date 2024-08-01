@@ -6,7 +6,7 @@ const App = () => {
 
     function handleSubmit(event) {
         event.preventDefault();
-        console.log(nome, email);
+        console.log(event);
     };
 
     return (
