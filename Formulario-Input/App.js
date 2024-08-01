@@ -2,6 +2,7 @@ import React from 'react'
 
 const App = () => {
     const [nome, setNome] = React.useState('');
+    const [email, setEmail] = React.useState('');
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -14,8 +15,17 @@ const App = () => {
             <input
                 id='nome'
                 type='text'
+                name='nome'
                 value={nome}
                 onChange={(event) => setNome(event.target.value)}
+            />
+            <label htmlFor='email'>E-mail</label>
+            <input
+                id='email'
+                type='text'
+                name='email'
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
             />
             <button>Enviar</button>
         </form>
