@@ -29,7 +29,7 @@ const App = () => {
     const [cidade, setCidade] = React.useState('');
     const [estado, setEstado] = React.useState('');
 
-    // 
+    // esse aqui embaixo se for fazer como objeto
     const [form, setForm] = React.useState({
         nome: '',
         email: '',
@@ -42,11 +42,23 @@ const App = () => {
         estado: ''
     });
 
+    function handleSubmit(event) {
+        event.preventDefault();
+    };
 
+    function 
     return (
-        <div>
-
-        </div>
+        <form>
+            <label onSubmit={handleSubmit}>Nome</label>
+            <input
+                id='nome'
+                type='text'
+                name='nome'
+                value={nome}
+                onChange={(event) => setNome(event.target.value)}
+            />
+            <button>Enviar</button>
+        </form>
     )
 }
 
