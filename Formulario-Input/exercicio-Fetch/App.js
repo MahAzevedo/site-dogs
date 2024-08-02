@@ -16,3 +16,38 @@ fetch('https://ranekapi.origamid.dev/json/api/usuario', {
 
 
 
+import React from 'react'
+
+const App = () => {
+    const [nome, setNome] = React.useState('');
+    const [email, setEmail] = React.useState('');
+    const [senha, setSenha] = React.useState('');
+    const [cep, setCep] = React.useState('');
+    const [rua, setRua] = React.useState('');
+    const [numero, setNumero] = React.useState('');
+    const [bairro, setBairro] = React.useState('');
+    const [cidade, setCidade] = React.useState('');
+    const [estado, setEstado] = React.useState('');
+
+    // 
+    const [form, setForm] = React.useState({
+        nome: '',
+        email: '',
+        senha: '',
+        cep: '',
+        rua: '',
+        numero: '',
+        bairro: '',
+        cidade: '',
+        estado: ''
+    });
+
+
+    return (
+        <div>
+
+        </div>
+    )
+}
+
+export default App
