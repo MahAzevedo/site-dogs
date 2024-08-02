@@ -14,3 +14,5 @@ fetch('https://ranekapi.origamid.dev/json/api/usuario', {
 
 // Mostre uma mensagem na tela, caso a resposta da API seja positiva
 
+
+
