@@ -3,6 +3,10 @@ import React from 'react'
 const App = () => {
     const [nome, setNome] = React.useState('');
     const [email, setEmail] = React.useState('');
+    const [form, setForm] = React.useState({ /*forma de fazer nome e email como um objeto dentro do form */
+        nome: '',
+        email: ''
+    })
 
     function handleSubmit(event) {
         event.preventDefault();
