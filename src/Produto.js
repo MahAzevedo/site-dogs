@@ -15,3 +15,6 @@ const Produto = ({ nome, propriedades }) => {
 };
 
 export default Produto;
+
+
+
