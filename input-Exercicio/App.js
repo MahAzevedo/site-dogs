@@ -12,9 +12,13 @@ const App = () => {
         estado: '',
     });
 
-    return (
-        <form></form>
-    )
+    function handlechange() {
+        const { id, value } = target;
+    };
+    return <form>
+        <label htmlFor='nome'>Nome</label>
+        <input type='text' id='nome' value={form.nome} onChange={handlechange} />
+    </form>
 };
 
 export default App;
