@@ -9,7 +9,7 @@ const App = () => {
         rua: '',
         bairro: '',
         cidade: '',
-        estado: ''
+        estado: '',
     });
 
     return (
