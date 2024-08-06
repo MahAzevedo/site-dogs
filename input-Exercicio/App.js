@@ -35,17 +35,24 @@ const App = () => {
         setForm({ ...form, [id]: value })
     };
 
-    return <form>
-        <label htmlFor='nome'>Nome</label>
-        <input type='text' id='nome' value={form.nome} onChange={handlechange} />
-        <label htmlFor='email'>E-mail</label>
-        <input
-            type='email'
-            id='email'
-            value={form.email}
-            onChange={handlechange}
-        />
-    </form>
+    return (
+        <form>
+            {formFields.map(({ id, label, type }) => (
+                <div>
+                    <label htmlFor={id}>{label}</label>
+                    <input type={type} id={id} value={form[id]} onChange={handlechange} />
+                </div>
+            ))};
+
+            <label htmlFor='email'>E-mail</label>
+            <input
+                type='email'
+                id='email'
+                value={form.email}
+                onChange={handlechange}
+            />
+        </form>
+    )
 };
 
 export default App;
