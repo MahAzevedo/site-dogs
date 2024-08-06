@@ -46,7 +46,7 @@ const App = () => {
         event.preventDefault();
     };
 
-    function pevent()
+    function 
     return (
         <form>
             <label onSubmit={handleSubmit}>Nome</label>
