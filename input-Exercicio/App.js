@@ -41,20 +41,22 @@ const formFields = [
         label: 'Estado',
         type: 'text',
     },
-]
+];
+
+
 
 const App = () => {
-    const [form, setForm] = React.useState({
-        nome: '',
-        email: '',
-        senha: '',
-        cep: '',
-        numero: '',
-        rua: '',
-        bairro: '',
-        cidade: '',
-        estado: '',
-    });
+    const [form, setForm] = React.useState(
+        formFields.reduce((acc, field) => {
+            console.log(acc);
+            return {
+                ...acc,
+                [field.id]: '',
+            };
+        }, {}),
+    );
+
+    const [response, setResponse] = React.useState(null);
 
     function handleChange() {
         const { id, value } = target;
@@ -70,7 +72,7 @@ const App = () => {
             },
             body: JSON.stringify(form),
         }).then((response) => {
-            console.log(response);
+            setResponse(response);
         });
     };
 
@@ -86,6 +88,7 @@ const App = () => {
                         onChange={handleChange} />
                 </div>
             ))};
+            {response && response.ok && <p>Formulário Enviado</p>}
             <button>Enviar</button>
         </form>
     )
