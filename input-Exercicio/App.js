@@ -4,17 +4,42 @@ const formFields = [
     {
         id: 'nome',
         label: 'Nome',
-        type: 'text'
+        type: 'text',
     },
     {
         id: 'email',
         label: 'E-mail',
-        type: 'email'
+        type: 'email',
     },
     {
         id: 'senha',
         label: 'Senha',
-        type: 'password'
+        type: 'password',
+    },
+    {
+        id: 'numero', // aqui é o cep que é número
+        label: 'Numero',
+        type: 'text',
+    },
+    {
+        id: 'rua',
+        label: 'Rua',
+        type: 'text',
+    },
+    {
+        id: 'bairro',
+        label: 'Bairro',
+        type: 'text',
+    },
+    {
+        id: 'cidade',
+        label: 'Cidade',
+        type: 'text',
+    },
+    {
+        id: 'estado',
+        label: 'Estado',
+        type: 'text',
     },
 ]
 
@@ -24,33 +49,44 @@ const App = () => {
         email: '',
         senha: '',
         cep: '',
+        numero: '',
         rua: '',
         bairro: '',
         cidade: '',
         estado: '',
     });
 
-    function handlechange() {
+    function handleChange() {
         const { id, value } = target;
         setForm({ ...form, [id]: value })
     };
 
+    function handleSubmit(event) {
+        event.preventDefault();
+        fetch('https://ranekapi.origamid.dev/json/api/usuario', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application.json',
+            },
+            body: JSON.stringify(form),
+        }).then((response) => {
+            console.log(response);
+        });
+    };
+
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             {formFields.map(({ id, label, type }) => (
-                <div>
+                <div key={id}>
                     <label htmlFor={id}>{label}</label>
-                    <input type={type} id={id} value={form[id]} onChange={handlechange} />
+                    <input
+                        type={type}
+                        id={id}
+                        value={form[id]}
+                        onChange={handleChange} />
                 </div>
             ))};
-
-            <label htmlFor='email'>E-mail</label>
-            <input
-                type='email'
-                id='email'
-                value={form.email}
-                onChange={handlechange}
-            />
+            <button>Enviar</button>
         </form>
     )
 };
