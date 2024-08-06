@@ -1,5 +1,23 @@
 import React from 'react'
 
+const formFields = [
+    {
+        id: 'nome',
+        label: 'Nome',
+        type: 'text'
+    },
+    {
+        id: 'email',
+        label: 'E-mail',
+        type: 'email'
+    },
+    {
+        id: 'senha',
+        label: 'Senha',
+        type: 'password'
+    },
+]
+
 const App = () => {
     const [form, setForm] = React.useState({
         nome: '',
