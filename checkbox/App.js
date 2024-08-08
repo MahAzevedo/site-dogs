@@ -3,8 +3,11 @@ import React from 'react'
 const App = () => {
     return (
         <form>
-            <input type="text" />
-        </form>;
+            <label htmlFor=" ">
+                <input type="text" />
+            </label>
+
+        </form>
     )
 }
 
