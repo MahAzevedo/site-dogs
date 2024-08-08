@@ -4,7 +4,8 @@ const App = () => {
     return (
         <form>
             <label htmlFor=" ">
-                <input type="text" />
+                <input type="checkbox" />
+                Li os termos.
             </label>
 
         </form>
