@@ -4,8 +4,10 @@ const App = () => {
     const [termos, setTermos] = React.useState(false);
     return (
         <form>
-            <label htmlFor=" ">
-                <input type="checkbox"
+            {termos && <p>Aceitou os termos</p>}
+            <label>
+                <input
+                    type="checkbox"
                     value="Termos"
                     checked={termos}
                     onChange={({ target }) => setTermos(target.checked)}
