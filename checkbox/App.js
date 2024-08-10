@@ -5,7 +5,11 @@ const App = () => {
     return (
         <form>
             <label htmlFor=" ">
-                <input type="checkbox" />
+                <input type="checkbox"
+                    value="Termos"
+                    checked={termos}
+                    onChange={({ target }) => setTermos(target.checked)}
+                />
                 Aceito os termos.
             </label>
         </form>
