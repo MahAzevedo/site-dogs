@@ -3,6 +3,10 @@ import React from 'react'
 const App = () => {
     const [cores, setCores] = React.useState([]);
 
+    function handleChange({ target }) {
+        console.log(target);
+    }
+
     return (
         <form>
             <label>
