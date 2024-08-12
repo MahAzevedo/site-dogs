@@ -12,11 +12,20 @@ const App = () => {
             <label>
                 <input
                     type="checkbox"
-                    value={cores}
-                    checked={cores}
-                    onChange={({ target }) => setCores(target.checked)}
+                    value={azul}
+                    //checked={termos}
+                    onChange={handleChange}
                 />
-                Aceito os termos
+                Azul
+            </label>
+            <label>
+                <input
+                    type="checkbox"
+                    value={vermelho}
+                    // checked={termos}
+                    onChange={handleChange}
+                />
+                Vermelho
             </label>
         </form>
     );
