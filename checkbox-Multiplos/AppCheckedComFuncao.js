@@ -1,17 +1,17 @@
 import React from 'react'
 
-const App = () => {
-    const [cores, setCores] = React.useState(['vermelho']);
+const AppCheckedComFuncao = () => {
+    const [cores, setCores] = React.useState['vermelho', 'azul'] // se deixar os dois, ambos ficaram marcados/checked
 
     function handleChange({ target }) {
         if (target.checked) {
-            setCores([...cores, target.value]);
+            setCores(...cores, target.value);
         } else {
             setCores(cores.filter((cor) => cor !== target.value));
-        };
+        }
     };
 
-    function ckeckColor(cor) {
+    function checkColor(cor) {
         return cores.includes(cor);
     };
 
@@ -20,8 +20,8 @@ const App = () => {
             <label>
                 <input
                     type="checkbox"
-                    value={azul}
-                    checked={ckeckColor}
+                    value="azul"
+                    checked={cores.includes('azul')}
                     onChange={handleChange}
                 />
                 Azul
@@ -29,8 +29,8 @@ const App = () => {
             <label>
                 <input
                     type="checkbox"
-                    value={vermelho}
-                    checked={ckeckColor}
+                    value="vermelho"
+                    checked={cores.includes('vermelho')}
                     onChange={handleChange}
                 />
                 Vermelho
@@ -39,4 +39,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default AppCheckedComFuncao;
