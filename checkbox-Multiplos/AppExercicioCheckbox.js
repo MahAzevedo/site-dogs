@@ -24,7 +24,7 @@ const AppExercicioCheckbox = () => {
                     type="checkbox"
                     value="azul"
                     checked={checkColor}
-                    onChange={handleChange}
+                    onChange={handleChange(cor)}
                 />
                 Azul
             </label>
@@ -33,7 +33,7 @@ const AppExercicioCheckbox = () => {
                     type="checkbox"
                     value="roxo"
                     checked={checkColor}
-                    onChange={handleChange}
+                    onChange={handleChange(cor)}
                 />
                 Roxo
             </label>
@@ -42,7 +42,7 @@ const AppExercicioCheckbox = () => {
                     type="checkbox"
                     value="laranja"
                     checked={checkColor}
-                    onChange={handleChange}
+                    onChange={handleChange(cor)}
                 />
                 Laranja
             </label>
@@ -51,7 +51,7 @@ const AppExercicioCheckbox = () => {
                     type="checkbox"
                     value="verde"
                     checked={checkColor}
-                    onChange={handleChange}
+                    onChange={handleChange(cor)}
                 />
                 Verde
             </label>
@@ -60,7 +60,7 @@ const AppExercicioCheckbox = () => {
                     type="checkbox"
                     value="vermelho"
                     checked={checkColor}
-                    onChange={handleChange}
+                    onChange={handleChange(cor)}
                 />
                 Vermelho
             </label>
@@ -69,7 +69,7 @@ const AppExercicioCheckbox = () => {
                     type="checkbox"
                     value="cinza"
                     checked={checkColor}
-                    onChange={handleChange}
+                    onChange={handleChange(cor)}
                 />
                 Cinza
             </label>
