@@ -21,7 +21,7 @@ const App = () => {
                 <input
                     type="checkbox"
                     value={azul}
-                    checked={ckeckColor}
+                    checked={cores.includes('azul')}
                     onChange={handleChange}
                 />
                 Azul
@@ -30,7 +30,7 @@ const App = () => {
                 <input
                     type="checkbox"
                     value={vermelho}
-                    checked={ckeckColor}
+                    checked={cores.includes('vermelho')}
                     onChange={handleChange}
                 />
                 Vermelho

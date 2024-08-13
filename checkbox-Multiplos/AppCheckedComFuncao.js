@@ -21,7 +21,7 @@ const AppCheckedComFuncao = () => {
                 <input
                     type="checkbox"
                     value="azul"
-                    checked={cores.includes('azul')}
+                    checked={checkColor}
                     onChange={handleChange}
                 />
                 Azul
@@ -30,7 +30,7 @@ const AppCheckedComFuncao = () => {
                 <input
                     type="checkbox"
                     value="vermelho"
-                    checked={cores.includes('vermelho')}
+                    checked={checkColor}
                     onChange={handleChange}
                 />
                 Vermelho
