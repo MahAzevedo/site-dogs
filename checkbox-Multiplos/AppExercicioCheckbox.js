@@ -13,69 +13,35 @@ const AppExercicioCheckbox = () => {
         }
     };
 
-    function checkColor(cor) {
-        return cores.includes(cor);
-    };
+    // function checkColor(cor) {
+    //     return cores.includes(cor);
+    // };
 
     return (
         <form>
-            <label>
-                <input
-                    type="checkbox"
-                    value="azul"
-                    checked={checkColor}
-                    onChange={handleChange(cor)}
-                />
-                Azul
-            </label>
-            <label>
-                <input
-                    type="checkbox"
-                    value="roxo"
-                    checked={checkColor}
-                    onChange={handleChange(cor)}
-                />
-                Roxo
-            </label>
-            <label>
-                <input
-                    type="checkbox"
-                    value="laranja"
-                    checked={checkColor}
-                    onChange={handleChange(cor)}
-                />
-                Laranja
-            </label>
-            <label>
-                <input
-                    type="checkbox"
-                    value="verde"
-                    checked={checkColor}
-                    onChange={handleChange(cor)}
-                />
-                Verde
-            </label>
-            <label>
-                <input
-                    type="checkbox"
-                    value="vermelho"
-                    checked={checkColor}
-                    onChange={handleChange(cor)}
-                />
-                Vermelho
-            </label>
-            <label>
-                <input
-                    type="checkbox"
-                    value="cinza"
-                    checked={checkColor}
-                    onChange={handleChange(cor)}
-                />
-                Cinza
-            </label>
+            {coresArray.map((cor, index) =>
+                <label key={index} style={{ textTransform: 'capitalize' }}>
+                    <input
+                        type="checkbox"
+                        value="cor"
+                        checked={cores.includes(cor)}
+                        onChange={handleChange}
+                    />
+                    {cor}
+                </label>
+            )};
         </form>
     );
 };
 
 export default AppExercicioCheckbox;
 
+/*
+
+OBS.:
+--->>> linha 22: index aparece pq se precisar repetir cores, com ele é possível, é só adicioná-lo no map para executar e no label como kye;
+
+--->>> linha 27: se usar: checked={cores.includes(cor)}, exclui a function da linha 16 a 18; 
+se usar o: checkedColor da function então substitui por: checkColor e usa a function da linha 16 a 18.
+ 
+*/
