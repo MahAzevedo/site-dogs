@@ -40,3 +40,6 @@ const App = () => {
 };
 
 export default App;
+
+// com checkbox Multiplos, mas, sem function, feito direto no return
+// no AppCheckedComFuncao está a forma feita com function e no return no checked está o objeto, ou seja, a function tá representada alí pelo checked={handlechange}
