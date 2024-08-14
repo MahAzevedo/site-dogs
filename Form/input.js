@@ -1,6 +1,6 @@
 import React from 'react'
 
-const App = () => {
+const Input = () => {
     const [] = React.useState('');
     return (
         <form>
@@ -9,6 +9,6 @@ const App = () => {
     );
 };
 
-export default App;
+export default Input;
 
 // A ideia aqui é otimizar (reciclar) componentes, se são repetidos dá para usar mais vezes 
