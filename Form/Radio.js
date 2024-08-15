@@ -13,4 +13,4 @@ const Radio = () => {
 export default Radio;
 
 
-// radio vai usar <> fragmentos </> pq ele tem vários labels
+// radio vai usar <> fragmento </> pq ele tem vários labels
