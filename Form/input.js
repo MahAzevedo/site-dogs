@@ -5,7 +5,13 @@ const Input = ({ id, label, value }) => {
     return (
         <div>
             <label htmlFor="id">{label}</label>
-            <input type="text" id={id} name={id} value={value} onChange={({ target }) => setValue = (target.value)} />
+            <input
+                type="text"
+                id={id}
+                name={id}
+                value={value}
+                onChange={({ target }) => setValue = (target.value)}
+            />
         </div>
     );
 };
@@ -13,3 +19,8 @@ const Input = ({ id, label, value }) => {
 export default Input;
 
 // A ideia aqui é otimizar (reciclar) componentes, se são repetidos dá para usar mais vezes 
+
+
+
+
+
