@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Input = ({ id, label, value }) => {
+const Input = ({ id, label, setValue, value }) => {
 
     return (
         <div>
