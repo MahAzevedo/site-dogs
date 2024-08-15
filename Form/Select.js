@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Select = () => {
+const Select = ({ options }) => {
     return (
         <select>
-            <option value="notebook">Notebook</option>
-            <option value="smartphone">Smartphone</option>
+            {options.map((option) => (
+                <option key={option}>{option}</option>
+            ))};
         </select>
     );
 };

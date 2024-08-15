@@ -7,6 +7,7 @@ const App = () => {
 
     return (
         <form>
+            <Select options={['Smartphone', 'Tablet']} />
             <Input id="nome" label="Nome" value={nome}
                 setValue={setNome} required />
             <Input id="email" label="E-mail" value={email} setValue={setEmail} required />
