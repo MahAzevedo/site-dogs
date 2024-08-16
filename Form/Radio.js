@@ -6,6 +6,9 @@ const Radio = () => {
             <label>
                 <input type="radio" />
             </label>
+            <label>
+                <input type="radio" />
+            </label>
         </>
     );
 };
