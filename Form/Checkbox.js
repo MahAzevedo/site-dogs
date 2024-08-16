@@ -1,11 +1,17 @@
 import React from 'react'
 
-const Checkbox = () => {
+const Checkbox = ({ options }) => {
     return (
-        <form>
-
-        </form>
+        <>
+            {options.map((option) =>
+                <label>
+                    <input
+                        type="checkbox"
+                        value={option}
+                    />
+                </label>
+            )};
+        </>
     );
 };
-
 export default Checkbox;
