@@ -9,9 +9,20 @@ const App = () => {
     const [cor, setCor] = React.useState('Vermelho');
     const [frutas, setFrutas] = React.useState('');
     const [linguagens, setLinguagens] = React.useState([]);
+    const [termos, setTermos] = React.useState([]);
+    if (termos.length > 0) {
+        console.log(enviar);
+    }; // esse if aqui serve para verificar se foi validado ou não. Não precisa manter.
 
     return (
         <form>
+            <h2>Termos</h2>
+            <Checkbox
+                options={['Li e aceito os termos.']}
+                value={termos}
+                setValue={setTermos}
+            />
+
             <h2>Checkbox</h2>
             <Checkbox
                 options={['Javascript', 'PHP', 'Ruby']}
