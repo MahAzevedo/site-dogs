@@ -8,12 +8,16 @@ const App = () => {
     const [produto, setProduto] = React.useState('');
     const [cor, setCor] = React.useState('Vermelho');
     const [frutas, setFrutas] = React.useState('');
-    const [linguagens, setLinguagens] = React.useState(['Javascript', 'PHP', 'Ruby']);
+    const [linguagens, setLinguagens] = React.useState([]);
 
     return (
         <form>
             <h2>Checkbox</h2>
-            <Checkbox options={['Javascript', 'PHP', 'Ruby']} />
+            <Checkbox
+                options={['Javascript', 'PHP', 'Ruby']}
+                value={linguagens}
+                setValue={setLinguagens}
+            />
 
             <h2>Cores</h2>
             <Radio options={['Azul', 'Vermelho']} value={cor} setValue={setCor} />
