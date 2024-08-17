@@ -13,10 +13,12 @@ const Checkbox = ({ options, value, setValue }) => {
     return (
         <>
             {options.map((option) =>
-                <label>
+                <label key={option}>
                     <input
                         type="checkbox"
                         value={option}
+                        checked={value.includes(option)}
+                        onChange={handleChange}
                     />
                     {option}
                 </label>
