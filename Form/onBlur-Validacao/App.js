@@ -3,9 +3,14 @@ import Input from './Form/Input';
 
 const App = () => {
     const [cep, setCep] = React.useState('');
+    const [error, setError] = React.useState(null);
+
+    function validateCep() { };
 
     function handleBlur({ target }) {
-        console.log(target.value);
+        const regex = /^\d{5}-?d{3}$/;
+        const validacao = regex.test(target.value)
+        console.log(validacao);
     };
 
     return (
@@ -31,3 +36,9 @@ export default App;
 
 // eu quero validar esse valor, como eu faço?
 // a validação acontece no onBlur
+
+
+// A forma MAIS FÁCIL DE FAZER VALIDAÇÃO É com ---->>>> REGEX
+//   isso aqui é REGEX pra CEP --->>>  /^\d{5}-?\{3}$/;  ou assim  /^\d{5}-?\{3}$/.test();
+
+//  Expressões regulares são padrões utilizados para selecionar combinações de caracteres em uma string. Em JavaScript, expressões regulares como o uso de parênteses e etc...
