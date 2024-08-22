@@ -1,6 +1,11 @@
 import React from 'react';
 
-const types = {};
+const types = {
+    cep: {
+        regex: /^\d{5}-?d{3}$/,
+        message: 'CEP inválido'
+    }
+};
 
 const useForm = (type) => {
     const [value, setValue] = React.useState('');
@@ -10,7 +15,7 @@ const useForm = (type) => {
         if (value.length === 0) {
             setError('Preencha um valor');
             return false;
-        } else if (!/^\d{5}-?d{3}$/.test(value)) {
+        } else if (!types[type].regex.test(value)) {
             setError('Preencha um CEP válido');
             return false;
         } else {
