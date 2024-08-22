@@ -24,13 +24,13 @@ const App = () => {
                 label="Nome"
                 id="nome"
                 type="text"
-                {...text}
+                {...nome}
             />
             <Input
                 label="Sobrenome"
                 id="sobrenome"
                 type="text"
-                {...text}
+                {...sobrenome}
             />
             <Input
                 label="CEP"
