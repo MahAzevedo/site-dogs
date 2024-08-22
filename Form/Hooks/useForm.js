@@ -4,6 +4,9 @@ const types = {
     cep: {
         regex: /^\d{5}-?d{3}$/,
         message: 'CEP inválido'
+    },
+    email: {
+        regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     }
 };
 
@@ -16,7 +19,7 @@ const useForm = (type) => {
             setError('Preencha um valor');
             return false;
         } else if (!types[type].regex.test(value)) {
-            setError('Preencha um CEP válido');
+            setError(types[type].message);
             return false;
         } else {
             setError(null);
@@ -24,10 +27,19 @@ const useForm = (type) => {
         };
     };
 
+    function onChange({ target }) {
+        if (error) validate(target.value);
+        setValue(target.value);
+    };
+
     return {
         value,
         setValue,
-    }
+        error,
+        onChange,
+        onBlur: () => validate(value),
+        validate: () => validate(value),
+    };
 };
 
 export default useForm;
@@ -39,3 +51,5 @@ export default useForm;
 // regex: regular expression JavaScript
 
 // setar valor é colocar o set e o setValue
+
+// Não existe regex pra nome de pessoa, nome de pessoa é nome de pessoa.
