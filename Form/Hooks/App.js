@@ -11,7 +11,7 @@ const App = () => {
 
     function handleSubmit(event) {
         event.preventDefault();
-        if (cep.validate() && email.validate() && nome.validade()) {
+        if (cep.validate() && email.validate() && nome.validade() && sobrenome.validate()) {
             console.log('Enviou');
         } else {
             console.log('Não enviar');
