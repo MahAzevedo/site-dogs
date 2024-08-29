@@ -63,6 +63,6 @@ export default App;
 */
 
 /*
-UseFor É SÓ PARA --->>> INPUT
+UseFor É SÓ PARA --->>> INPUT   não funciona nem para o RADIO nem para o SELECT
 Geralmente 
 */
