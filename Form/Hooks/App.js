@@ -64,5 +64,5 @@ export default App;
 
 /*
 UseFor É SÓ PARA --->>> INPUT   não funciona nem para o RADIO nem para o SELECT, é só para o INPUT, é específico.
-Mas é geralmente no INPUT  que tem um REGEX, pq no SELECT só há campos para a pessoa SELECIONAR
+Mas é geralmente no INPUT  que tem um REGEX, pq no SELECT só há campos para a pessoa SELECIONAR ou não. NÃO EXISTE VALIDAÇÃO DE REGEX na seleção de um campo em si ou na seleção de um radio ou de um checkbox
 */
