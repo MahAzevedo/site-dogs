@@ -63,6 +63,6 @@ export default App;
 */
 
 /*
-UseFor É SÓ PARA --->>> INPUT   não funciona nem para o RADIO nem para o SELECT
-Geralmente 
+UseFor É SÓ PARA --->>> INPUT   não funciona nem para o RADIO nem para o SELECT, é só para o INPUT, é específico.
+Mas é geralmente no INPUT  que tem um REGEX, pq no SELECT só há campos para a pessoa SELECIONAR
 */
