@@ -61,3 +61,8 @@ export default App;
  Dá para utilizar esse cep.validate() como se fosse um método e ele vai validar esse cep pra mim. 
  E pode passar isso em qualquer lugar que quiser para validar esse informação.
 */
+
+/*
+UseFor É SÓ PARA --->>> INPUT
+Geralmente 
+*/
