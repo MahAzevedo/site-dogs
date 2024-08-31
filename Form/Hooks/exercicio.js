@@ -1,6 +1,6 @@
 import React from 'react';
 
-const exercicio = () => {
+const perguntas = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const exercicio = () => {
     );
 };
 
-export default exercicio;
+export default perguntas;
