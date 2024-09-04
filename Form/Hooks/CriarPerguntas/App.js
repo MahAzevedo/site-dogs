@@ -4,6 +4,7 @@ const App = () => {
     return (
         <form>
             <Radio />
+            <button>Próxima</button>
         </form>
     );
 };
