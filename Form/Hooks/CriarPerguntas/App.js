@@ -36,8 +36,9 @@ const perguntas = [
     },
 ];
 
-
 const App = () => {
+    const [resposta, setResposta] = React.useState('');
+
     return (
         <form>
             <Radio />
