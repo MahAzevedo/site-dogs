@@ -2,7 +2,6 @@ import React from 'react';
 import React from './Form/Radio';
 
 const perguntas = [
-    const perguntas = [
     {
         pergunta: 'Qual método é utilizado para criar componentes?',
         options: [
@@ -36,8 +35,7 @@ const perguntas = [
         id: 'p4',
     },
 ];
-      
-]
+
 
 const App = () => {
     return (
