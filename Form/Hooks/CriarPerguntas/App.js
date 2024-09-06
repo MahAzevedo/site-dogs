@@ -37,7 +37,9 @@ const perguntas = [
 ];
 
 const App = () => {
-    const [resposta, setResposta] = React.useState('');
+    const [resposta, setResposta] = React.useState({
+        p1:
+    });
 
     return (
         <form>
