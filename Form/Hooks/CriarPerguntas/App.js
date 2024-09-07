@@ -38,7 +38,10 @@ const perguntas = [
 
 const App = () => {
     const [resposta, setResposta] = React.useState({
-        p1:
+        p1: '',
+        p2: '',
+        p3: '',
+        p4: ''
     });
 
     return (
