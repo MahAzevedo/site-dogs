@@ -41,12 +41,15 @@ const App = () => {
         p1: '',
         p2: '',
         p3: '',
-        p4: ''
+        p4: '',
     });
 
     return (
         <form>
-            <Radio />
+            {perguntas.map(pergunta => (
+                <Radio {...pergunta} />
+            ))}
+
             <button>Próxima</button>
         </form>
     );
