@@ -51,8 +51,9 @@ const App = () => {
     };
     return (
         <form>
-            {perguntas.map(pergunta => (
+            {perguntas.map((pergunta, index) => (
                 <Radio
+                    active={slide === index}
                     key={pergunta.id}
                     value={respostas[pergunta.id]}
                     onChange={handleChange}
