@@ -44,6 +44,8 @@ const App = () => {
         p4: '',
     });
 
+    const [slide, setSlide] = React.useState(0);
+
     function handleChange({ target }) {
         setRespostas({ ...respostas, [target.id]: target.value });
     };
