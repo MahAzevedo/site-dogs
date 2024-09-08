@@ -49,6 +49,10 @@ const App = () => {
     function handleChange({ target }) {
         setRespostas({ ...respostas, [target.id]: target.value });
     };
+
+    function handleClick() {
+        setSlide(slide + 1);
+    };
     return (
         <form>
             {perguntas.map((pergunta, index) => (
@@ -61,7 +65,7 @@ const App = () => {
                 />
             ))};
 
-            <button>Próxima</button>
+            <button onClick={handleClick}>Próxima</button>
         </form>
     );
 };
