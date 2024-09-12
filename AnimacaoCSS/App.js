@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css'; // importar antes dos componentes q estao abaixo no ./Produto
+import Produto from './Produto';
 
 const App = () => {
     const [ativar, setAtivar] = React.useState(false);
