@@ -1,12 +1,29 @@
 .animeLeft {
+    /* aqui é o estado inicial*/
     opacity: 0;
-    transform: translateX(-20px);
+    /* transform: translateX(-20px);começa pelo lado esquerdo*/
+    /*transform: scale(.8);animação começa de "dentro p fora"*/
+    transform: translateY(-20px);
+    /*translateY(-20px) começa de cima pra baixo*/
     animation: animeLeft .3s forwards;
 }
 
 @keyframes animeLeft {
     to {
         opacity: 1;
+        /*aqui o 1 é o valor inicial, começa no 1*/
         transform: initial;
     }
 }
+
+/* --->>>  ATENÇÃO: sobre o estado inicial:::
+  qualquer coisa que queira modificar é só modificar no estado inicial lá no animeLeft que foi onde começou
+*/
+
+/* 
+--->>>  a Scale/escala funciona assim: 
+  se colocar um item de valor menor que 1 ele vai diminuir
+  se colocar um item de valor maior que 1 ele vai aumentar
+*/
+
+/* isso foi uma animação simples sem nenhuma biblioteca, só CSS mesmo */
