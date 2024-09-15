@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Slide = () => {
+const Slide = ({ slices }) => {
     return (
         <div>
 
