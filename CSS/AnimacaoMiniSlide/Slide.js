@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Slide = ({ slices }) => {
+const Slide = ({ slides }) => {
     return (
-        <div>
-
-        </div>
+        <section>
+            {slides.map((slide) => (
+                <div key={slide.id}>{slide.text}</div>
+            ))};
+        </section>
     );
 };
 
