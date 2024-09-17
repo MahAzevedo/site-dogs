@@ -6,7 +6,8 @@ const Slide = ({ slides }) => {
         <section className={styles.container}>
             <div className={styles.content}>
                 {slides.map((slide) => (
-                    <div key={slide.id} className={styles.nav} >{slide.text}</div>
+                    <div key={slide.id} className={styles.item}>{slide.text}
+                    </div>
                 ))};
             </div>
             <nav className={styles.nav}>
