@@ -1,3 +1,7 @@
 .container {
     overflow: hidden;
 }
+
+.content {
+    display: flex;
+}
