@@ -5,3 +5,7 @@
 .content {
     display: flex;
 }
+
+.item {
+    width: 80%;
+}
