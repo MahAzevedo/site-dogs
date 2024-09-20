@@ -11,4 +11,6 @@
     /*esse display mantem o flex no tamanho do width selecionado*/
     width: 80%;
     margin: 0 10%;
+    padding: 10rem 0;
+    background: #eee;
 }
