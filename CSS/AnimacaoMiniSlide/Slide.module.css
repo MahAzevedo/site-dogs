@@ -16,3 +16,10 @@
     border-radius: 4px;
     text-align: center;
 }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+    width: 80%;
+}
