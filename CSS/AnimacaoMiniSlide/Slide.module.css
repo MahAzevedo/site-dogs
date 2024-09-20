@@ -13,4 +13,6 @@
     margin: 0 10%;
     padding: 10rem 0;
     background: #eee;
+    border-radius: 4px;
+    text-align: center;
 }
