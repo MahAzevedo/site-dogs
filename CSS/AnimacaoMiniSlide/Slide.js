@@ -4,6 +4,7 @@ import { transform } from '@babel/core';
 
 const Slide = ({ slides }) => {
     const [active, setActive] = React.useState(0);
+    const [position, setPosition] = React.useState(0);
 
     return (
         <section className={styles.container}>
