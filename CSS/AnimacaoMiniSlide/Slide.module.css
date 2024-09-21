@@ -4,6 +4,7 @@
 
 .content {
     display: flex;
+    transition: transform .03s ease;
 }
 
 .item {
