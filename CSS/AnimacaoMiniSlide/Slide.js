@@ -7,7 +7,7 @@ const Slide = ({ slides }) => {
 
     return (
         <section className={styles.container}>
-            <div className={styles.content} style={{ transform: 'translateX()' }}>
+            <div className={styles.content} style={{ transform: 'translateX(-200px)' }}>
                 {slides.map((slide) => (
                     <div key={slide.id} className={styles.item}>{slide.text}
                     </div>
