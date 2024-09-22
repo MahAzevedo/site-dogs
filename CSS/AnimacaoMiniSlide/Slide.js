@@ -5,6 +5,7 @@ import { transform } from '@babel/core';
 const Slide = ({ slides }) => {
     const [active, setActive] = React.useState(0);
     const [position, setPosition] = React.useState(0);
+    const contentRef = React.useRef();
 
     function slidePrev() {
         setPosition(postition + 600)
@@ -16,8 +17,11 @@ const Slide = ({ slides }) => {
 
     return (
         <section className={styles.container}>
-            <div className={styles.content}
-                style={{ transform: `translateX(${position}px)` }}>
+            <div
+                ref={contentRef}
+                className={styles.content}
+                style={{ transform: `translateX(${position}px)` }}
+            >
                 {slides.map((slide) => (
                     <div key={slide.id} className={styles.item}>{slide.text}
                     </div>
