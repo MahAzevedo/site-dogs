@@ -6,6 +6,14 @@ const Slide = ({ slides }) => {
     const [active, setActive] = React.useState(0);
     const [position, setPosition] = React.useState(0);
 
+    function slidePrev() {
+        setPosition(postition + 600)
+    };
+
+    function slideNext() {
+        setPosition(position - 600)
+    };
+
     return (
         <section className={styles.container}>
             <div className={styles.content}
