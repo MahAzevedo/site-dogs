@@ -7,12 +7,16 @@ const Slide = ({ slides }) => {
     const [position, setPosition] = React.useState(0);
     const contentRef = React.useRef();
 
-    function slidePrev() {
-        setPosition(postition + 600)
-    };
+
+    React.useEffect(() => {
+
+    }, [active]);
+
+    function slidePrev() { };
 
     function slideNext() {
-        setPosition(position - 600)
+        const { width } = contentRef.current.getBoundingClientRect();
+        setPosition(position - width);
     };
 
     return (
