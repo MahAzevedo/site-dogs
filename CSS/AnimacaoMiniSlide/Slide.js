@@ -14,9 +14,7 @@ const Slide = ({ slides }) => {
     }, [active]);
 
     function slidePrev() {
-        if (active > 0) {
-            setActive(active - 1);
-        }
+        if (active > 0) setActive(active - 1);
     };
 
     function slideNext() {
