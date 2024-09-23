@@ -9,14 +9,16 @@ const Slide = ({ slides }) => {
 
 
     React.useEffect(() => {
-
-    }, [active]);
-
-    function slidePrev() { };
-
-    function slideNext() {
         const { width } = contentRef.current.getBoundingClientRect();
         setPosition(position - width);
+    }, [active]);
+
+    function slidePrev() {
+        setActive(active - 1);
+    };
+
+    function slideNext() {
+        setActive(active + 1);
     };
 
     return (
