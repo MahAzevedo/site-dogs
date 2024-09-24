@@ -18,6 +18,7 @@ const Slide = ({ slides }) => {
     };
 
     function slideNext() {
+        if (active < slides.length - 1);
         setActive(active + 1);
     };
 
