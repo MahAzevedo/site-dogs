@@ -1,0 +1,10 @@
+.fundo {
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/foto.jpg);
+    background-size: cover;
+}
+
+/* BACKGROUND:
+background no CSS você usa pra tudo que for ESTILO, ou seja, NÃO É UMA FOTO DE CONTEÚDO EM SI.
+*/
