@@ -5,7 +5,7 @@ import foto from './img/foto.jpg';
 const App = () => {
     return (
         <div>
-            <img src="" alt="" />
+            <img src={foto} alt="Cachorro" />
         </div>
     );
 };
