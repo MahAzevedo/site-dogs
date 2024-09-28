@@ -7,8 +7,8 @@ const App = () => {
     return (
         <div>
             <p className="fundo"></p>
-            <img src={foto} alt="Cachorro" />
             <img src={dog} alt="Dog" />
+            <img src={foto} alt="Cachorro" />
         </div>
     );
 };
