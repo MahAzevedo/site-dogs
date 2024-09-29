@@ -7,7 +7,7 @@ const App = () => {
     return (
         <div>
             <p className="fundo"></p>
-            <ReactComponent />
+            <Dog />
             <img src={foto} alt="Cachorro" />
         </div>
     );
