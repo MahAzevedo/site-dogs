@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import foto from './img/foto.jpg';
-import dog from './img/dog.svg';
+import { ReactComponent } from './img/dog.svg';
 
 const App = () => {
     return (
