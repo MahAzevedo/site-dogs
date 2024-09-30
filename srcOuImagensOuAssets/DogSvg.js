@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DogSvg = ({ color }) => {
+const DogSvg = ({ color, olho }) => {
     return (
         <svg
             width="28"
