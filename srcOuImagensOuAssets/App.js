@@ -7,7 +7,7 @@ const App = () => {
     return (
         <div>
             <p className="fundo"></p>
-            <DogSvg />
+            <DogSvg color="#84e" />
             <img src={foto} alt="Cachorro" />
         </div>
     );
