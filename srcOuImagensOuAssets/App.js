@@ -7,7 +7,11 @@ const App = () => {
     const [olho, setOlho] = React.useState(0);
 
     function handleClick() {
-        setOlho(3)
+        //setOlho(3) // esse aqui, se pisca o olho cresce até 3
+        for (let i = 0; i < 6; i++);  // esse aqui faz uma animação no olho
+        setTimeout(() => {
+            setOlho(i);
+        }, 30 * i);
     };
 
     return (
