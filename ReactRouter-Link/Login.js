@@ -8,7 +8,6 @@ const Login = () => {
         console.log('Fazer login');
         navigate('/sobre');
     };
-
     return (
         <div>
             <h1>Login</h1>

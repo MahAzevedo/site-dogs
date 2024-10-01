@@ -9,8 +9,12 @@ const Header = () => {
                 Home
             </NavLink>{''}
             |{''}
-            <NavLink to="Sobre" activeStyle={{ color: 'tomato' }}>
+            <NavLink activeStyle={{ color: 'tomato' }} to="sobre">
                 Sobre
+            </NavLink>
+            |{''}
+            <NavLink activeStyle={{ color: 'tomato' }} to="login">
+                Login
             </NavLink>
         </nav>
     );
@@ -23,4 +27,4 @@ export default Header;
 // onde era Link, coloquei-> NavLink, que é o irmão do Link, funciona da mesma forma, só que mostra qual é a página ativa no momento
 
 // *** ATENÇÃO ***
-// Na página HOme que tem o barra/, e o barra/ em si que tá presente no Sobre e tá presente em todas as outras páginas, TEM QUE ESPECIFICAR o END -->> end, que seria pra dizer que é o final, usa assim -->> <NavLink to="/" end>
+// Na página Home que tem o barra/, e o barra/ em si que tá presente no Sobre e tá presente em todas as outras páginas, TEM QUE ESPECIFICAR o END -->> end, que seria pra dizer que é o final, usa assim -->> <NavLink to="/" end>

@@ -5,7 +5,7 @@ const Login = () => {
     const navigate = useNavigate();
 
     function handleClick() {
-        console.log('Fazer login');
+        console.log('Fazer login')
         navigate('/sobre');
     };
 
