@@ -2,7 +2,9 @@ import React from 'react';
 
 const Head = (props) => {
     React.useEffect(() => {
-        document.title = props.title;
+        document.title = 'Dogs | ' + props.title;
+        document.querySelector('meta[]nam="description').setAttribute('content', props.description);
+
         console.log(props);
     }, [props]); // é assim que monta um React.useEffect()
     return (
