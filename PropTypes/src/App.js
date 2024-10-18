@@ -4,7 +4,9 @@ import Button from './Button';
 const App = () => {
   return (
     <div>
-      <Button width={100}>Clique Aqui</Button>
+      <Button margin="20px" width={300}>
+        Clique Aqui
+      </Button>
     </div>
   );
 };
