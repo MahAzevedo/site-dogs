@@ -8,25 +8,23 @@ import Header from './Header';
 import NaoEncontrada from './NaoEncontrada';
 import Footer from './Footer';
 
-
 const App = () => {
-    return (
-        <BrowserRouter>
-            <Header />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="sobre" element={<Sobre />} />
-                <Route path="login" element={<Login />} />
-                <Route path="produto/:id/*" element={<Produto />} />
-                <Route path="*" element={<NaoEncontrada />} />
-            </Routes>
-            <Footer />
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="sobre" element={<Sobre />} />
+        <Route path="login" element={<Login />} />
+        <Route path="produto/:id/*" element={<Produto />} />
+        <Route path="*" element={<NaoEncontrada />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 };
-
+<div></div>;
 export default App;
-
 
 // Dentro do Route, coloca path="" -->> <Route path="/" />   esse é o caminho da HOME
 
@@ -34,4 +32,4 @@ export default App;
 // quando tiver o barra/ significa que é o caminho para HOME
 
 // *** ATENÇÃO *** SOBRE ENCONTRAR PÁGINA -->> /:id/* pra quê isso serve:
-// <Route path="produto/:id/*" element={<Produto />} />   -->> aqui se tiver uma barra/ depois vai dar erro pq é uma barra/ não encontrada, então tem que colocar o asterisco*, o asterisco* significa que pode ser produto/id/e qualquer outra coisa alí pra tentar encontrar  
+// <Route path="produto/:id/*" element={<Produto />} />   -->> aqui se tiver uma barra/ depois vai dar erro pq é uma barra/ não encontrada, então tem que colocar o asterisco*, o asterisco* significa que pode ser produto/id/e qualquer outra coisa alí pra tentar encontrar

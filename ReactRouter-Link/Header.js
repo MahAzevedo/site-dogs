@@ -1,27 +1,26 @@
 import React from 'react';
-// import './Header.css'; desativei pq coloquei o activeStyle={{color:'tomato}} dentro 
+// import './Header.css'; desativei pq coloquei o activeStyle={{color:'tomato}} dentro
 import { NavLink, NavLinkLink } from 'react-router-dom';
 
 const Header = () => {
-    return (
-        <nav>
-            <NavLink to="/" activeStyle={{ color: 'tomato' }} end>
-                Home
-            </NavLink>{''}
-            |{''}
-            <NavLink activeStyle={{ color: 'tomato' }} to="sobre">
-                Sobre
-            </NavLink>
-            |{''}
-            <NavLink activeStyle={{ color: 'tomato' }} to="login">
-                Login
-            </NavLink>
-        </nav>
-    );
+  return (
+    <nav>
+      <NavLink to="/" activeStyle={{ color: 'tomato' }} end>
+        Home
+      </NavLink>
+      {''}|{''}
+      <NavLink activeStyle={{ color: 'tomato' }} to="sobre">
+        Sobre
+      </NavLink>
+      {''}|{''}
+      <NavLink activeStyle={{ color: 'tomato' }} to="login">
+        Login
+      </NavLink>
+    </nav>
+  );
 };
 
 export default Header;
-
 
 // Link:
 // onde era Link, coloquei-> NavLink, que é o irmão do Link, funciona da mesma forma, só que mostra qual é a página ativa no momento
